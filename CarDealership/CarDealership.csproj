@@ -2,4 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="0.69.0" />
+  </ItemGroup>
 </Project>

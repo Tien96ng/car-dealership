@@ -1,0 +1,10 @@
+@using Dealership.Models;
+
+<ol>
+@foreach(Car car in Model)
+{
+  <li>$@car.GetPrice() @car.Year @car.Make @car.Model</li>
+}
+</ol>
+
+<a href="/"> Go Back Home </a>
