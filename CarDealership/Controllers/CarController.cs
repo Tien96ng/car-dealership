@@ -21,5 +21,12 @@ namespace Dealership.Controllers
         return View(priceRange);
       }
 
+      [HttpPost("/new")]
+      public ActionResult New(string make, string model, int year, int price)
+      {
+        Car.Save(make, model, year, price );
+        return RedirectToAction("Index");
+      }
+
     }
 }
